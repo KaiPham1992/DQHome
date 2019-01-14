@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TVRemoteContent" customModule="DQHome_Dev" customModuleProvider="target">
+            <connections>
+                <outlet property="btnClose" destination="wn1-bq-l15" id="dm2-wJ-35a"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="479" height="250"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wn1-bq-l15">
+                    <rect key="frame" x="439" y="0.0" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="PJH-pJ-2UD"/>
+                        <constraint firstAttribute="height" constant="40" id="lkz-I6-wpx"/>
+                    </constraints>
+                    <state key="normal" image="close"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v8q-w5-mvy">
+                    <rect key="frame" x="20" y="40" width="439" height="190"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BmH-U8-1dA">
+                            <rect key="frame" x="0.0" y="0.0" width="219.5" height="190"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ps-mJ-QWo">
+                                    <rect key="frame" x="0.0" y="166" width="211.5" height="24"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Jya-YZ-mrH">
+                                            <rect key="frame" x="0.0" y="0.0" width="211.5" height="24"/>
+                                            <subviews>
+                                                <button opaque="NO" tag="2006" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcZ-BZ-z1A" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="70" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="I6R-hr-LbF"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <state key="normal" title="On/Off">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="12"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="btnActionTappedWithSender:" destination="-1" eventType="touchUpInside" id="Sko-DV-ei6"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="2007" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDO-Db-Ssf" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                                                    <rect key="frame" x="96" y="0.0" width="70" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="x85-63-Zd6"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <state key="normal" title="Mute">
+                                                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="12"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="btnActionTappedWithSender:" destination="-1" eventType="touchUpInside" id="1bX-Bh-W3r"/>
+                                                    </connections>
+                                                </button>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_hdtv" translatesAutoresizingMaskIntoConstraints="NO" id="siT-t0-gr8">
+                                                    <rect key="frame" x="191.5" y="0.0" width="20" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="20" id="28Z-uR-6cx"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Jya-YZ-mrH" secondAttribute="trailing" id="0FC-Zk-97q"/>
+                                        <constraint firstItem="Jya-YZ-mrH" firstAttribute="leading" secondItem="7Ps-mJ-QWo" secondAttribute="leading" id="7mN-4R-4F4"/>
+                                        <constraint firstAttribute="bottom" secondItem="Jya-YZ-mrH" secondAttribute="bottom" id="WXb-qG-uCF"/>
+                                        <constraint firstAttribute="height" constant="24" id="oLh-dJ-bEQ"/>
+                                        <constraint firstItem="Jya-YZ-mrH" firstAttribute="top" secondItem="7Ps-mJ-QWo" secondAttribute="top" id="rmq-Gm-Cay"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jy1-CG-SPN">
+                                    <rect key="frame" x="5" y="8" width="24" height="145"/>
+                                    <subviews>
+                                        <button opaque="NO" tag="2001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQf-j7-VhD" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="1" width="24" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="jxr-Bh-lPM"/>
+                                            </constraints>
+                                            <state key="normal" image="up"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="btnActionTappedWithSender:" destination="-1" eventType="touchUpInside" id="wjh-vC-ckc"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="2002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ha-op-9FR" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="114" width="24" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="FcB-3i-9nM"/>
+                                            </constraints>
+                                            <state key="normal" image="down"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="btnActionTappedWithSender:" destination="-1" eventType="touchUpInside" id="D1d-2V-VxQ"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WzT-3b-ru7">
+                                            <rect key="frame" x="0.0" y="26" width="24" height="93"/>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="PQf-j7-VhD" firstAttribute="top" secondItem="jy1-CG-SPN" secondAttribute="top" constant="1" id="2eO-hX-KIZ"/>
+                                        <constraint firstAttribute="width" constant="24" id="3Wx-co-R4h"/>
+                                        <constraint firstItem="6ha-op-9FR" firstAttribute="top" secondItem="WzT-3b-ru7" secondAttribute="bottom" constant="-5" id="87U-kq-Z7Z"/>
+                                        <constraint firstAttribute="trailing" secondItem="PQf-j7-VhD" secondAttribute="trailing" id="8ZR-1D-mfw"/>
+                                        <constraint firstItem="WzT-3b-ru7" firstAttribute="leading" secondItem="jy1-CG-SPN" secondAttribute="leading" id="Om4-JN-zn5"/>
+                                        <constraint firstAttribute="trailing" secondItem="6ha-op-9FR" secondAttribute="trailing" id="b1z-EB-ltC"/>
+                                        <constraint firstItem="PQf-j7-VhD" firstAttribute="leading" secondItem="jy1-CG-SPN" secondAttribute="leading" id="d1i-31-7cu"/>
+                                        <constraint firstItem="6ha-op-9FR" firstAttribute="leading" secondItem="jy1-CG-SPN" secondAttribute="leading" id="g9i-sx-R8L"/>
+                                        <constraint firstAttribute="bottom" secondItem="6ha-op-9FR" secondAttribute="bottom" constant="1" id="mvc-M4-Vpc"/>
+                                        <constraint firstItem="WzT-3b-ru7" firstAttribute="top" secondItem="PQf-j7-VhD" secondAttribute="bottom" constant="-5" id="n7X-gP-pIV"/>
+                                        <constraint firstItem="WzT-3b-ru7" firstAttribute="centerX" secondItem="jy1-CG-SPN" secondAttribute="centerX" id="v7g-oE-Kj5"/>
+                                        <constraint firstAttribute="trailing" secondItem="WzT-3b-ru7" secondAttribute="trailing" id="ySx-WF-a9m"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vb4-Rf-g6s">
+                                    <rect key="frame" x="187.5" y="8" width="24" height="145"/>
+                                    <subviews>
+                                        <button opaque="NO" tag="2003" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3A-Oa-Mab" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="1" width="24" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="BuQ-c3-XXd"/>
+                                            </constraints>
+                                            <state key="normal" title="+">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="btnActionTappedWithSender:" destination="-1" eventType="touchUpInside" id="NYe-sU-H6z"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="2004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OvO-IN-Fhw" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="114" width="24" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="Qus-H9-t9C"/>
+                                            </constraints>
+                                            <state key="normal" title="-">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="btnActionTappedWithSender:" destination="-1" eventType="touchUpInside" id="Hxo-DH-af7"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.89999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vol" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFy-DR-R4Y">
+                                            <rect key="frame" x="0.0" y="26" width="24" height="93"/>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="24" id="0KM-cU-6G0"/>
+                                        <constraint firstItem="OvO-IN-Fhw" firstAttribute="leading" secondItem="vb4-Rf-g6s" secondAttribute="leading" id="2MH-4V-Ze3"/>
+                                        <constraint firstItem="u3A-Oa-Mab" firstAttribute="top" secondItem="vb4-Rf-g6s" secondAttribute="top" constant="1" id="4LL-r0-UnU"/>
+                                        <constraint firstAttribute="trailing" secondItem="OvO-IN-Fhw" secondAttribute="trailing" id="584-NN-2eU"/>
+                                        <constraint firstItem="OvO-IN-Fhw" firstAttribute="top" secondItem="UFy-DR-R4Y" secondAttribute="bottom" constant="-5" id="5ea-K0-0QO"/>
+                                        <constraint firstItem="UFy-DR-R4Y" firstAttribute="centerX" secondItem="vb4-Rf-g6s" secondAttribute="centerX" id="AUj-H1-qRP"/>
+                                        <constraint firstItem="UFy-DR-R4Y" firstAttribute="leading" secondItem="vb4-Rf-g6s" secondAttribute="leading" id="NVK-jK-dcc"/>
+                                        <constraint firstAttribute="trailing" secondItem="UFy-DR-R4Y" secondAttribute="trailing" id="NZL-kC-iHl"/>
+                                        <constraint firstAttribute="trailing" secondItem="u3A-Oa-Mab" secondAttribute="trailing" id="YsD-Jn-V5t"/>
+                                        <constraint firstItem="UFy-DR-R4Y" firstAttribute="top" secondItem="u3A-Oa-Mab" secondAttribute="bottom" constant="-5" id="ss0-Ip-S0j"/>
+                                        <constraint firstAttribute="bottom" secondItem="OvO-IN-Fhw" secondAttribute="bottom" constant="1" id="x4W-zl-6gz"/>
+                                        <constraint firstItem="u3A-Oa-Mab" firstAttribute="leading" secondItem="vb4-Rf-g6s" secondAttribute="leading" id="zzI-Se-Uc8"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <button opaque="NO" tag="2005" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2w-fd-xZG" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                                    <rect key="frame" x="60" y="30.5" width="100" height="100"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="100" id="2il-SE-KaB"/>
+                                        <constraint firstAttribute="height" constant="100" id="2uh-8H-gaP"/>
+                                    </constraints>
+                                    <state key="normal" image="big_ok"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="50"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnActionTappedWithSender:" destination="-1" eventType="touchUpInside" id="DCJ-tA-tio"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="n2w-fd-xZG" firstAttribute="centerX" secondItem="BmH-U8-1dA" secondAttribute="centerX" id="2WS-hZ-fh0"/>
+                                <constraint firstItem="vb4-Rf-g6s" firstAttribute="bottom" secondItem="jy1-CG-SPN" secondAttribute="bottom" id="8Pi-sZ-7td"/>
+                                <constraint firstItem="jy1-CG-SPN" firstAttribute="leading" secondItem="BmH-U8-1dA" secondAttribute="leading" constant="5" id="Hh5-Rz-4Qr"/>
+                                <constraint firstAttribute="bottom" secondItem="7Ps-mJ-QWo" secondAttribute="bottom" id="IE0-iQ-asO"/>
+                                <constraint firstItem="7Ps-mJ-QWo" firstAttribute="leading" secondItem="BmH-U8-1dA" secondAttribute="leading" id="P11-YA-kmi"/>
+                                <constraint firstItem="n2w-fd-xZG" firstAttribute="centerY" secondItem="WzT-3b-ru7" secondAttribute="centerY" id="SwA-li-4eb"/>
+                                <constraint firstItem="jy1-CG-SPN" firstAttribute="top" secondItem="BmH-U8-1dA" secondAttribute="top" constant="8" id="jCV-39-lc0"/>
+                                <constraint firstItem="vb4-Rf-g6s" firstAttribute="top" secondItem="jy1-CG-SPN" secondAttribute="top" id="noX-if-rfj"/>
+                                <constraint firstAttribute="trailing" secondItem="7Ps-mJ-QWo" secondAttribute="trailing" constant="8" id="osf-Pb-OiC"/>
+                                <constraint firstItem="mcZ-BZ-z1A" firstAttribute="top" secondItem="jy1-CG-SPN" secondAttribute="bottom" constant="13" id="sk8-f0-WJ1"/>
+                                <constraint firstAttribute="trailing" secondItem="vb4-Rf-g6s" secondAttribute="trailing" constant="8" id="tIm-UO-Phw"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KRy-Jw-OYg">
+                            <rect key="frame" x="227.5" y="0.0" width="211.5" height="190"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ypN-49-CPf">
+                                    <rect key="frame" x="0.0" y="0.0" width="211.5" height="20"/>
+                                    <subviews>
+                                        <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WjH-6b-NdW" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="42.5" height="20"/>
+                                            <state key="normal" image="double_arrow_left"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="btnActionTappedWithSender:" destination="-1" eventType="touchUpInside" id="Ogn-OL-hsY"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="1002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Lc-33-WzJ" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                                            <rect key="frame" x="42.5" y="0.0" width="42" height="20"/>
+                                            <state key="normal" image="play"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="btnActionTappedWithSender:" destination="-1" eventType="touchUpInside" id="w6I-4L-cSd"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="1003" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lu-nO-GsW" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                                            <rect key="frame" x="84.5" y="0.0" width="42.5" height="20"/>
+                                            <state key="normal" image="pause"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="btnActionTappedWithSender:" destination="-1" eventType="touchUpInside" id="hvU-Eb-7jf"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="1004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sgs-AM-KHx" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                                            <rect key="frame" x="127" y="0.0" width="42" height="20"/>
+                                            <state key="normal" image="square"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="btnActionTappedWithSender:" destination="-1" eventType="touchUpInside" id="7em-y1-RT0"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="1005" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zOl-pd-CT5" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                                            <rect key="frame" x="169" y="0.0" width="42.5" height="20"/>
+                                            <state key="normal" image="double_arrow_right"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="btnActionTappedWithSender:" destination="-1" eventType="touchUpInside" id="h71-VZ-V1f"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="Gk7-Pw-cbZ"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SmC-oT-mz0">
+                                    <rect key="frame" x="8" y="80" width="195.5" height="110"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="DrJ-fX-G8a">
+                                            <rect key="frame" x="0.0" y="0.0" width="195.5" height="30"/>
+                                            <subviews>
+                                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7V7-fq-B8H" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="ayd-6d-N2O"/>
+                                                    </constraints>
+                                                    <state key="normal" title="1">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="btnActionTappedWithSender:" destination="-1" eventType="touchUpInside" id="csN-xU-Opw"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Swx-aL-CTF" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                                                    <rect key="frame" x="55" y="0.0" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="8oh-LI-yG7"/>
+                                                    </constraints>
+                                                    <state key="normal" title="2">
+                                                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="btnActionTappedWithSender:" destination="-1" eventType="touchUpInside" id="XNC-sA-GWS"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UI2-lV-BHR" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                                                    <rect key="frame" x="110.5" y="0.0" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="eWZ-DL-lI7"/>
+                                                    </constraints>
+                                                    <state key="normal" title="3">
+                                                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="btnActionTappedWithSender:" destination="-1" eventType="touchUpInside" id="vlc-Bh-Bfi"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMg-Ne-tcZ" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                                                    <rect key="frame" x="165.5" y="0.0" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="aCQ-FW-qKG"/>
+                                                    </constraints>
+                                                    <state key="normal" title="4">
+                                                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="btnActionTappedWithSender:" destination="-1" eventType="touchUpInside" id="Zm6-hf-EVD"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="G95-Dg-T9q">
+                                            <rect key="frame" x="0.0" y="40" width="195.5" height="30"/>
+                                            <subviews>
+                                                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ey3-cY-WDt" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="cVF-cF-wD6"/>
+                                                    </constraints>
+                                                    <state key="normal" title="5">
+                                                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="btnActionTappedWithSender:" destination="-1" eventType="touchUpInside" id="zFe-ww-KKm"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hou-y8-x5T" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                                                    <rect key="frame" x="55" y="0.0" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="6Bn-Kg-Hms"/>
+                                                    </constraints>
+                                                    <state key="normal" title="6">
+                                                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="btnActionTappedWithSender:" destination="-1" eventType="touchUpInside" id="L4n-Ex-Gf2"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plV-8z-tID" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                                                    <rect key="frame" x="110.5" y="0.0" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="0dN-mf-0NS"/>
+                                                    </constraints>
+                                                    <state key="normal" title="7">
+                                                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="btnActionTappedWithSender:" destination="-1" eventType="touchUpInside" id="Dp5-gJ-CZD"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avj-yu-Xuc" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                                                    <rect key="frame" x="165.5" y="0.0" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="e6S-cW-067"/>
+                                                    </constraints>
+                                                    <state key="normal" title="8">
+                                                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="btnActionTappedWithSender:" destination="-1" eventType="touchUpInside" id="0C7-Ia-yM3"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nQV-N8-eRw">
+                                            <rect key="frame" x="0.0" y="80" width="195.5" height="30"/>
+                                            <subviews>
+                                                <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjB-u8-dPG" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="BkB-Ym-oZF"/>
+                                                    </constraints>
+                                                    <state key="normal" title="9">
+                                                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="btnActionTappedWithSender:" destination="-1" eventType="touchUpInside" id="qxZ-cr-wAd"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fob-HN-LfV" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                                                    <rect key="frame" x="55" y="0.0" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="DBP-1S-LbV"/>
+                                                    </constraints>
+                                                    <state key="normal" title="0">
+                                                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="btnActionTappedWithSender:" destination="-1" eventType="touchUpInside" id="Tp9-J0-MSN"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9c-mM-3fz" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                                                    <rect key="frame" x="110.5" y="0.0" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="sAM-tK-jns"/>
+                                                    </constraints>
+                                                    <state key="normal">
+                                                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTb-G1-B1p" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                                                    <rect key="frame" x="165.5" y="0.0" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="laX-BH-PSi"/>
+                                                    </constraints>
+                                                    <state key="normal">
+                                                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="110" id="C6S-8G-oAK"/>
+                                    </constraints>
+                                </stackView>
+                                <button opaque="NO" tag="1009" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sdq-7m-3nq" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                                    <rect key="frame" x="118.5" y="160" width="85" height="30"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <state key="normal" title="OK">
+                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="15"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnActionTappedWithSender:" destination="-1" eventType="touchUpInside" id="yQm-Of-KyE"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fpw-W4-jz6">
+                                    <rect key="frame" x="16" y="30" width="187.5" height="40"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="77r-3m-kK1">
+                                            <rect key="frame" x="-8" y="5" width="85" height="30"/>
+                                            <subviews>
+                                                <button opaque="NO" tag="1006" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0Z-FA-5CU" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="Jb1-Rj-DfG"/>
+                                                        <constraint firstAttribute="height" constant="30" id="Jp6-ep-rxG"/>
+                                                    </constraints>
+                                                    <state key="normal" title="-  ">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="btnActionTappedWithSender:" destination="-1" eventType="touchUpInside" id="XJK-Z6-CvX"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="1007" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZu-rW-4rS" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                                                    <rect key="frame" x="45" y="0.0" width="40" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="ayQ-tz-vM5"/>
+                                                    </constraints>
+                                                    <state key="normal" title="  +">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="btnActionTappedWithSender:" destination="-1" eventType="touchUpInside" id="Tw4-7v-tXh"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.89999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vol" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vjj-mD-Ccp">
+                                                    <rect key="frame" x="27.5" y="0.0" width="30" height="30"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="MRn-2x-Z7c"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="Vjj-mD-Ccp" firstAttribute="centerX" secondItem="77r-3m-kK1" secondAttribute="centerX" id="2f0-ux-jpS"/>
+                                                <constraint firstAttribute="bottom" secondItem="Vjj-mD-Ccp" secondAttribute="bottom" id="4gC-Cy-268"/>
+                                                <constraint firstItem="W0Z-FA-5CU" firstAttribute="top" secondItem="77r-3m-kK1" secondAttribute="top" id="8lG-SG-kCc"/>
+                                                <constraint firstItem="W0Z-FA-5CU" firstAttribute="leading" secondItem="77r-3m-kK1" secondAttribute="leading" id="CsJ-7F-WeS"/>
+                                                <constraint firstAttribute="bottom" secondItem="W0Z-FA-5CU" secondAttribute="bottom" id="Hbe-Z1-XJy"/>
+                                                <constraint firstItem="rZu-rW-4rS" firstAttribute="top" secondItem="77r-3m-kK1" secondAttribute="top" id="bnB-qs-9Vb"/>
+                                                <constraint firstItem="Vjj-mD-Ccp" firstAttribute="top" secondItem="77r-3m-kK1" secondAttribute="top" id="dxl-tB-CFu"/>
+                                                <constraint firstAttribute="bottom" secondItem="rZu-rW-4rS" secondAttribute="bottom" id="fed-kX-FRz"/>
+                                                <constraint firstAttribute="trailing" secondItem="rZu-rW-4rS" secondAttribute="trailing" id="y0P-yB-byK"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="15"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <button opaque="NO" tag="1008" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e55-Pd-tsV" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                                            <rect key="frame" x="102.5" y="5" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="Ftl-p7-284"/>
+                                            </constraints>
+                                            <state key="normal" image="Power">
+                                                <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="15"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="btnActionTappedWithSender:" destination="-1" eventType="touchUpInside" id="MDf-Yy-qga"/>
+                                            </connections>
+                                        </button>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dvd" translatesAutoresizingMaskIntoConstraints="NO" id="uWE-D1-BpJ">
+                                            <rect key="frame" x="157.5" y="5" width="30" height="30"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="77r-3m-kK1" firstAttribute="centerY" secondItem="fpw-W4-jz6" secondAttribute="centerY" id="SYA-Pu-Mp4"/>
+                                        <constraint firstItem="e55-Pd-tsV" firstAttribute="centerY" secondItem="fpw-W4-jz6" secondAttribute="centerY" id="oaE-rc-eh8"/>
+                                        <constraint firstItem="uWE-D1-BpJ" firstAttribute="centerY" secondItem="e55-Pd-tsV" secondAttribute="centerY" id="tHl-NV-yxt"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="e55-Pd-tsV" firstAttribute="height" secondItem="UI2-lV-BHR" secondAttribute="height" id="8KO-BU-OAF"/>
+                                <constraint firstItem="fpw-W4-jz6" firstAttribute="top" secondItem="ypN-49-CPf" secondAttribute="bottom" constant="10" id="Cvc-fy-hjM"/>
+                                <constraint firstItem="fpw-W4-jz6" firstAttribute="trailing" secondItem="SmC-oT-mz0" secondAttribute="trailing" id="Dzj-9j-1op"/>
+                                <constraint firstItem="e55-Pd-tsV" firstAttribute="width" secondItem="UI2-lV-BHR" secondAttribute="width" id="EOp-gL-fnr"/>
+                                <constraint firstItem="uWE-D1-BpJ" firstAttribute="height" secondItem="dMg-Ne-tcZ" secondAttribute="height" id="KLC-uJ-Hds"/>
+                                <constraint firstItem="77r-3m-kK1" firstAttribute="leading" secondItem="7V7-fq-B8H" secondAttribute="leading" id="PeK-kj-s3u"/>
+                                <constraint firstItem="SmC-oT-mz0" firstAttribute="leading" secondItem="KRy-Jw-OYg" secondAttribute="leading" constant="8" id="QIU-tw-LF2"/>
+                                <constraint firstItem="SmC-oT-mz0" firstAttribute="top" secondItem="fpw-W4-jz6" secondAttribute="bottom" constant="10" id="X32-RI-m0p"/>
+                                <constraint firstAttribute="bottom" secondItem="SmC-oT-mz0" secondAttribute="bottom" id="ZXZ-Vd-jhu"/>
+                                <constraint firstItem="ypN-49-CPf" firstAttribute="leading" secondItem="KRy-Jw-OYg" secondAttribute="leading" id="Zfq-uU-5mr"/>
+                                <constraint firstAttribute="trailing" secondItem="ypN-49-CPf" secondAttribute="trailing" id="bcE-7c-hK7"/>
+                                <constraint firstItem="77r-3m-kK1" firstAttribute="height" secondItem="7V7-fq-B8H" secondAttribute="height" id="dTz-fM-F5g"/>
+                                <constraint firstItem="sdq-7m-3nq" firstAttribute="leading" secondItem="i9c-mM-3fz" secondAttribute="leading" id="daN-od-VJF"/>
+                                <constraint firstItem="fpw-W4-jz6" firstAttribute="leading" secondItem="SmC-oT-mz0" secondAttribute="leading" constant="8" id="gMN-Wm-t8i"/>
+                                <constraint firstItem="77r-3m-kK1" firstAttribute="trailing" secondItem="Swx-aL-CTF" secondAttribute="trailing" id="k7e-AQ-1NV"/>
+                                <constraint firstItem="uWE-D1-BpJ" firstAttribute="centerX" secondItem="dMg-Ne-tcZ" secondAttribute="centerX" id="kQx-0v-KKG"/>
+                                <constraint firstItem="e55-Pd-tsV" firstAttribute="centerX" secondItem="UI2-lV-BHR" secondAttribute="centerX" id="nY7-0u-ygi"/>
+                                <constraint firstItem="sdq-7m-3nq" firstAttribute="trailing" secondItem="fTb-G1-B1p" secondAttribute="trailing" id="p62-86-xD7"/>
+                                <constraint firstItem="sdq-7m-3nq" firstAttribute="height" secondItem="fTb-G1-B1p" secondAttribute="height" id="rWs-TL-d5j"/>
+                                <constraint firstItem="uWE-D1-BpJ" firstAttribute="width" secondItem="dMg-Ne-tcZ" secondAttribute="width" id="tfT-VH-FPn"/>
+                                <constraint firstItem="sdq-7m-3nq" firstAttribute="centerY" secondItem="nQV-N8-eRw" secondAttribute="centerY" id="v7G-eD-ftj"/>
+                                <constraint firstItem="ypN-49-CPf" firstAttribute="top" secondItem="KRy-Jw-OYg" secondAttribute="top" id="yvR-Wj-2PK"/>
+                                <constraint firstAttribute="trailing" secondItem="SmC-oT-mz0" secondAttribute="trailing" constant="8" id="yyM-ie-kdl"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="BmH-U8-1dA" secondAttribute="bottom" id="DIT-F3-HQZ"/>
+                        <constraint firstItem="BmH-U8-1dA" firstAttribute="top" secondItem="v8q-w5-mvy" secondAttribute="top" id="FJ9-O1-NcE"/>
+                        <constraint firstItem="BmH-U8-1dA" firstAttribute="leading" secondItem="v8q-w5-mvy" secondAttribute="leading" id="OqT-5G-h8S"/>
+                        <constraint firstItem="KRy-Jw-OYg" firstAttribute="top" secondItem="v8q-w5-mvy" secondAttribute="top" id="TaU-qj-f7X"/>
+                        <constraint firstAttribute="bottom" secondItem="KRy-Jw-OYg" secondAttribute="bottom" id="avU-wD-LG7"/>
+                        <constraint firstItem="BmH-U8-1dA" firstAttribute="width" secondItem="v8q-w5-mvy" secondAttribute="width" multiplier="1/2" id="gSe-JF-kZJ"/>
+                        <constraint firstItem="KRy-Jw-OYg" firstAttribute="leading" secondItem="BmH-U8-1dA" secondAttribute="trailing" constant="8" id="w2R-NX-KXZ"/>
+                        <constraint firstAttribute="trailing" secondItem="KRy-Jw-OYg" secondAttribute="trailing" id="xJP-LD-BwS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="v8q-w5-mvy" firstAttribute="top" secondItem="wn1-bq-l15" secondAttribute="bottom" id="3yM-oO-PUH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="v8q-w5-mvy" secondAttribute="trailing" constant="20" id="Gb5-th-a8Z"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="v8q-w5-mvy" secondAttribute="bottom" constant="20" id="bXU-sg-qjG"/>
+                <constraint firstItem="v8q-w5-mvy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="n1U-bw-83E"/>
+                <constraint firstItem="wn1-bq-l15" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="nAb-3m-gjb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="wn1-bq-l15" secondAttribute="trailing" id="uTp-Zy-Q3g"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="221.59999999999999" y="360.71964017991007"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Power" width="19" height="19"/>
+        <image name="big_ok" width="91" height="91"/>
+        <image name="close" width="17" height="17"/>
+        <image name="double_arrow_left" width="10" height="9"/>
+        <image name="double_arrow_right" width="10" height="9"/>
+        <image name="down" width="9" height="5"/>
+        <image name="dvd" width="25" height="12"/>
+        <image name="ic_hdtv" width="23" height="18"/>
+        <image name="pause" width="10" height="9"/>
+        <image name="play" width="10" height="9"/>
+        <image name="square" width="10" height="9"/>
+        <image name="up" width="9" height="5"/>
+    </resources>
+</document>

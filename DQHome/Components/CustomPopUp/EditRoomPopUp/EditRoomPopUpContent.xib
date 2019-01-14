@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditRoomPopUpContent" customModule="DQHome_Dev" customModuleProvider="target">
+            <connections>
+                <outlet property="btnClose" destination="XKo-qi-DMu" id="Hy9-bF-05y"/>
+                <outlet property="btnDelete" destination="0V3-pb-ahz" id="8uO-G2-2HV"/>
+                <outlet property="btnMove" destination="52x-oi-bis" id="OVW-R7-KWn"/>
+                <outlet property="btnShowControl" destination="qvA-Is-oC7" id="myU-Of-eMh"/>
+                <outlet property="btnSize" destination="7g0-FJ-eDB" id="jXe-kY-UIZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="580" height="254"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKo-qi-DMu">
+                    <rect key="frame" x="540" y="0.0" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="faP-Bq-Ebb"/>
+                        <constraint firstAttribute="width" constant="40" id="fr7-Pe-KY4"/>
+                    </constraints>
+                    <state key="normal" image="icon_close"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bc4-Yk-oMf">
+                    <rect key="frame" x="30" y="60" width="520" height="174"/>
+                    <subviews>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7g0-FJ-eDB" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                            <rect key="frame" x="210" y="20" width="100" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="dCq-8w-se2"/>
+                                <constraint firstAttribute="height" constant="30" id="ebn-Dg-cJE"/>
+                            </constraints>
+                            <state key="normal" title="Kích Thước"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52x-oi-bis" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                            <rect key="frame" x="90" y="20" width="100" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="ewz-8s-NnR"/>
+                            </constraints>
+                            <state key="normal" title="Di Chuyển"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0V3-pb-ahz" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                            <rect key="frame" x="330" y="20" width="100" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="F8C-Bl-9e7"/>
+                            </constraints>
+                            <state key="normal" title="Xoá"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvA-Is-oC7" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                            <rect key="frame" x="135" y="144" width="250" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="qHy-Lh-S1y"/>
+                                <constraint firstAttribute="width" constant="250" id="wDO-SZ-3mV"/>
+                            </constraints>
+                            <state key="normal" title="Hiện điều khiển thiết bị"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="0V3-pb-ahz" firstAttribute="leading" secondItem="7g0-FJ-eDB" secondAttribute="trailing" constant="20" id="5nT-mQ-B4a"/>
+                        <constraint firstAttribute="bottom" secondItem="qvA-Is-oC7" secondAttribute="bottom" id="6LR-8y-K4G"/>
+                        <constraint firstItem="0V3-pb-ahz" firstAttribute="top" secondItem="7g0-FJ-eDB" secondAttribute="top" id="Bkq-dc-PfU"/>
+                        <constraint firstItem="52x-oi-bis" firstAttribute="top" secondItem="7g0-FJ-eDB" secondAttribute="top" id="Tcf-8E-vOL"/>
+                        <constraint firstItem="7g0-FJ-eDB" firstAttribute="top" secondItem="bc4-Yk-oMf" secondAttribute="top" constant="20" id="UuW-4M-sVe"/>
+                        <constraint firstItem="52x-oi-bis" firstAttribute="height" secondItem="7g0-FJ-eDB" secondAttribute="height" id="Xys-In-TdB"/>
+                        <constraint firstItem="7g0-FJ-eDB" firstAttribute="centerX" secondItem="bc4-Yk-oMf" secondAttribute="centerX" id="kTU-8z-Mge"/>
+                        <constraint firstItem="qvA-Is-oC7" firstAttribute="centerX" secondItem="bc4-Yk-oMf" secondAttribute="centerX" id="oZ0-UA-jOG"/>
+                        <constraint firstItem="7g0-FJ-eDB" firstAttribute="leading" secondItem="52x-oi-bis" secondAttribute="trailing" constant="20" id="vGd-oG-Lb5"/>
+                        <constraint firstItem="0V3-pb-ahz" firstAttribute="height" secondItem="7g0-FJ-eDB" secondAttribute="height" id="wGB-ef-PpL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="XKo-qi-DMu" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="AhQ-a1-Udy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="bc4-Yk-oMf" secondAttribute="bottom" constant="20" id="Olj-EP-M8A"/>
+                <constraint firstItem="bc4-Yk-oMf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="lgX-LK-q8n"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="XKo-qi-DMu" secondAttribute="trailing" id="s6v-LW-OOk"/>
+                <constraint firstItem="bc4-Yk-oMf" firstAttribute="top" secondItem="XKo-qi-DMu" secondAttribute="bottom" constant="20" id="vXv-0U-krB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bc4-Yk-oMf" secondAttribute="trailing" constant="30" id="wha-I2-9wq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="225.59999999999999" y="411.09445277361323"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_close" width="20" height="20"/>
+    </resources>
+</document>

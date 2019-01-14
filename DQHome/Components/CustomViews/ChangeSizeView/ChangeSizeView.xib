@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChangeSizeView" customModule="DQHome_Dev" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="258"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7KN-2q-9ez">
+                    <rect key="frame" x="177.5" y="0.0" width="20" height="20"/>
+                    <color key="backgroundColor" red="0.78039215689999997" green="0.086274509799999996" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="IXP-0K-jo3"/>
+                        <constraint firstAttribute="height" constant="20" id="pze-bq-ZDo"/>
+                    </constraints>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uQ-f9-t4Q">
+                    <rect key="frame" x="177.5" y="238" width="20" height="20"/>
+                    <color key="backgroundColor" red="0.78039215689999997" green="0.086274509799999996" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="g7O-07-eKA"/>
+                        <constraint firstAttribute="height" constant="20" id="unx-ag-cKP"/>
+                    </constraints>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uyf-fx-05F">
+                    <rect key="frame" x="355" y="119" width="20" height="20"/>
+                    <color key="backgroundColor" red="0.78039215689999997" green="0.086274509799999996" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="TYk-Jw-iLj"/>
+                        <constraint firstAttribute="width" constant="20" id="fw9-MN-QAD"/>
+                    </constraints>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OwK-NW-Tgg">
+                    <rect key="frame" x="0.0" y="119" width="20" height="20"/>
+                    <color key="backgroundColor" red="0.78039215689999997" green="0.086274509799999996" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="9is-Z1-YjK"/>
+                        <constraint firstAttribute="width" constant="20" id="NLa-Ix-Dqr"/>
+                    </constraints>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="7uQ-f9-t4Q" secondAttribute="bottom" id="2zg-Hw-P9U"/>
+                <constraint firstItem="OwK-NW-Tgg" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="6u0-X0-RuJ"/>
+                <constraint firstItem="OwK-NW-Tgg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="CCg-GV-fJA"/>
+                <constraint firstItem="7uQ-f9-t4Q" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="O96-c4-gRc"/>
+                <constraint firstItem="7KN-2q-9ez" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="PbU-o4-rY4"/>
+                <constraint firstItem="7KN-2q-9ez" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="gdC-Pq-y2f"/>
+                <constraint firstItem="uyf-fx-05F" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="hMZ-ze-J6v"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="uyf-fx-05F" secondAttribute="trailing" id="lQU-ds-cKl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="53.600000000000001" y="232.08395802098951"/>
+        </view>
+    </objects>
+</document>

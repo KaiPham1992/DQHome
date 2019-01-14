@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MyriadPro-Bold.otf">
+            <string>MyriadPro-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeCell" customModule="DQHome_Dev" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="174" height="148"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="174" height="148"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DAC-7K-blm">
+                        <rect key="frame" x="0.0" y="0.0" width="174" height="148"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Xq-vw-utK">
+                        <rect key="frame" x="0.0" y="0.0" width="174" height="148"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phòng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trW-bE-KFR" customClass="AppLabel" customModule="DQHome_Dev" customModuleProvider="target">
+                        <rect key="frame" x="8" y="123" width="50" height="17"/>
+                        <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="DAC-7K-blm" secondAttribute="trailing" id="335-J5-7un"/>
+                <constraint firstItem="trW-bE-KFR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="C0r-5m-YLn"/>
+                <constraint firstItem="6Xq-vw-utK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="LPI-8v-3Mc"/>
+                <constraint firstAttribute="trailing" secondItem="6Xq-vw-utK" secondAttribute="trailing" id="PjK-ys-DjL"/>
+                <constraint firstAttribute="bottom" secondItem="trW-bE-KFR" secondAttribute="bottom" constant="8" id="WEU-Nv-eTK"/>
+                <constraint firstAttribute="bottom" secondItem="6Xq-vw-utK" secondAttribute="bottom" id="dzz-ix-xsb"/>
+                <constraint firstItem="DAC-7K-blm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="j6E-Sw-jl7"/>
+                <constraint firstItem="6Xq-vw-utK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="kMN-gm-6q7"/>
+                <constraint firstAttribute="bottom" secondItem="DAC-7K-blm" secondAttribute="bottom" id="vkM-1t-0Zr"/>
+                <constraint firstItem="DAC-7K-blm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wKX-LA-PPn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="174" height="148"/>
+            <connections>
+                <outlet property="imgGroup" destination="6Xq-vw-utK" id="9l7-fQ-GTj"/>
+                <outlet property="lbName" destination="trW-bE-KFR" id="KD2-NE-Nir"/>
+                <outlet property="vBackground" destination="DAC-7K-blm" id="LKd-1C-rSC"/>
+            </connections>
+            <point key="canvasLocation" x="125" y="5"/>
+        </collectionViewCell>
+    </objects>
+</document>

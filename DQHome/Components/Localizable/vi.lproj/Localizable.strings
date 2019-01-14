@@ -1,0 +1,38 @@
+/* 
+  Localizable.strings
+  DQHome
+
+  Created by Ngoc Duong on 10/19/18.
+  Copyright © 2018 Engma. All rights reserved.
+*/
+"VietNamese" = "Việt Nam";
+"English" = "Tiếng Anh";
+"UserNamePlaceHolder" = "Tài khoản quản trị";
+"UserNameControlPlaceHolder" = "Tài khoản điều khiển";
+"Password" = "Mật khẩu";
+"SavePassword" = "Lưu mật khẩu";
+"Notification" = "Thông Báo";
+"NotAuthorizedException" = "Thông tin đăng nhập không đúng.\nVui lòng thử lại.";
+"Login" = "Đăng nhập";
+"ForgotPassword" = "Quên mật khẩu";
+"Accept" = "Đồng ý";
+"TryAgain" = "Thử lại";
+"SettingTitle" = "Thiết lập";
+"LoadingDefault" = "Loading";
+"SendSignal" = "Đang gửi tín hiệu";
+"SendSignalSuccess" = "Gửi tín hiệu thành công";
+"SendSignalFailed" = "Gửi tín hiệu thất bại";
+"LoginLoading" = "Đang đăng nhập";
+"Admin" = "Admin";
+"DeviceOffline" = "Thiết bị đang Offline.\nKhông thể điều khiển được";
+
+// MESSAGE
+"ErrorUserNameEmpty" = "Bạn phải nhập tài khoản quản trị.\nKhông được để trống";
+"ErrorUserNameControlEmpty" = "Bạn phải nhập tài khoản điểu khiển.\nKhông được để trống";
+"ErrorPasswordEmpty" = "Bạn phải nhập mật khẩu.\nKhông được để trống";
+"GetRooms" = "Đang lấy danh sách phòng";
+"GetScenes" = "Đang lấy danh sách ngữ cảnh";
+"GetRoomInfo" = "Đang lấy thông tin phòng";
+"NotYetSetUpGroup" = "Chưa thiết lập phòng";
+"DownloadInfoRoom" = "Đang tải dữ liệu mới";
+"SaveData" = "Đang lưu dữ liệu";

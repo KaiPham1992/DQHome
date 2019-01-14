@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CurtainControlRemoteContent" customModule="DQHome_Dev" customModuleProvider="target">
+            <connections>
+                <outlet property="btnClose" destination="GPn-4e-5Y9" id="3Yp-hO-2Md"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="355"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPn-4e-5Y9">
+                    <rect key="frame" x="325" y="0.0" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Z3n-Xc-0Zm"/>
+                        <constraint firstAttribute="height" constant="50" id="d0W-KG-SqN"/>
+                    </constraints>
+                    <state key="normal" image="close"/>
+                </button>
+                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTX-8l-Ypy" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                    <rect key="frame" x="162.5" y="152.5" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Q3O-Xf-tQZ"/>
+                        <constraint firstAttribute="width" constant="50" id="gic-Yk-fIe"/>
+                    </constraints>
+                    <state key="normal" title="STOP">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnActionTappedWithSender:" destination="-1" eventType="touchUpInside" id="hfh-zx-IlJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfI-Kz-bq9" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                    <rect key="frame" x="62.5" y="82.5" width="90" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="IsL-RD-mHW"/>
+                        <constraint firstAttribute="height" constant="40" id="eDl-3I-h1s"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnActionTappedWithSender:" destination="-1" eventType="touchUpInside" id="SuU-QK-EY2"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmB-Lg-Aa4" customClass="AppLabel" customModule="DQHome_Dev" customModuleProvider="target">
+                    <rect key="frame" x="62.5" y="132.5" width="90" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2M-gW-uGl" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                    <rect key="frame" x="222.5" y="82.5" width="90" height="40"/>
+                    <state key="normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnActionTappedWithSender:" destination="-1" eventType="touchUpInside" id="75q-TV-IEt"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Close" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9h-Sc-bh2" customClass="AppLabel" customModule="DQHome_Dev" customModuleProvider="target">
+                    <rect key="frame" x="246" y="132.5" width="43.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mK-aD-p2E" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                    <rect key="frame" x="62.5" y="232.5" width="90" height="40"/>
+                    <state key="normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnActionTappedWithSender:" destination="-1" eventType="touchUpInside" id="S6p-bF-iGz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8a-nE-7bk" customClass="AppButtonPopUp" customModule="DQHome_Dev" customModuleProvider="target">
+                    <rect key="frame" x="222.5" y="232.5" width="90" height="40"/>
+                    <state key="normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnActionTappedWithSender:" destination="-1" eventType="touchUpInside" id="CHw-1c-1lP"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Close All" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJd-0C-qLE" customClass="AppLabel" customModule="DQHome_Dev" customModuleProvider="target">
+                    <rect key="frame" x="234.5" y="282.5" width="66.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open All" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sr5-SY-Cdx" customClass="AppLabel" customModule="DQHome_Dev" customModuleProvider="target">
+                    <rect key="frame" x="75" y="282.5" width="65" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.015686274510000001" green="0.015686274510000001" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="LJd-0C-qLE" firstAttribute="centerY" secondItem="Sr5-SY-Cdx" secondAttribute="centerY" id="04h-Ke-6jS"/>
+                <constraint firstItem="v2M-gW-uGl" firstAttribute="leading" secondItem="KTX-8l-Ypy" secondAttribute="trailing" constant="10" id="25L-hU-Fii"/>
+                <constraint firstItem="bmB-Lg-Aa4" firstAttribute="trailing" secondItem="pfI-Kz-bq9" secondAttribute="trailing" id="4SU-ZL-twG"/>
+                <constraint firstItem="v2M-gW-uGl" firstAttribute="bottom" secondItem="pfI-Kz-bq9" secondAttribute="bottom" id="5JN-0d-ww3"/>
+                <constraint firstItem="bmB-Lg-Aa4" firstAttribute="leading" secondItem="pfI-Kz-bq9" secondAttribute="leading" id="8XU-TC-Ior"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="GPn-4e-5Y9" secondAttribute="trailing" id="9j0-CA-Rpg"/>
+                <constraint firstItem="KTX-8l-Ypy" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="9yo-w2-Cff"/>
+                <constraint firstItem="k8a-nE-7bk" firstAttribute="leading" secondItem="v2M-gW-uGl" secondAttribute="leading" id="GP0-Jd-YBq"/>
+                <constraint firstItem="KTX-8l-Ypy" firstAttribute="leading" secondItem="pfI-Kz-bq9" secondAttribute="trailing" constant="10" id="GlS-mX-6WY"/>
+                <constraint firstItem="bmB-Lg-Aa4" firstAttribute="top" secondItem="pfI-Kz-bq9" secondAttribute="bottom" constant="10" id="Hfr-Kz-FHD"/>
+                <constraint firstItem="k8a-nE-7bk" firstAttribute="top" secondItem="KTX-8l-Ypy" secondAttribute="bottom" constant="30" id="JWP-Td-Tvy"/>
+                <constraint firstItem="4mK-aD-p2E" firstAttribute="bottom" secondItem="k8a-nE-7bk" secondAttribute="bottom" id="LzW-pT-Fyb"/>
+                <constraint firstItem="4mK-aD-p2E" firstAttribute="leading" secondItem="pfI-Kz-bq9" secondAttribute="leading" id="NbF-x0-0iE"/>
+                <constraint firstItem="KTX-8l-Ypy" firstAttribute="top" secondItem="pfI-Kz-bq9" secondAttribute="bottom" constant="30" id="QPf-2V-naE"/>
+                <constraint firstItem="k8a-nE-7bk" firstAttribute="trailing" secondItem="v2M-gW-uGl" secondAttribute="trailing" id="RFD-yc-0nl"/>
+                <constraint firstItem="Sr5-SY-Cdx" firstAttribute="centerX" secondItem="bmB-Lg-Aa4" secondAttribute="centerX" id="UxJ-Uh-Xjo"/>
+                <constraint firstItem="v2M-gW-uGl" firstAttribute="width" secondItem="pfI-Kz-bq9" secondAttribute="width" id="WWP-aV-jx3"/>
+                <constraint firstItem="GPn-4e-5Y9" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Z63-Dw-g59"/>
+                <constraint firstItem="KTX-8l-Ypy" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="e77-bS-PIi"/>
+                <constraint firstItem="LJd-0C-qLE" firstAttribute="centerX" secondItem="k8a-nE-7bk" secondAttribute="centerX" id="fLC-UM-PvS"/>
+                <constraint firstItem="x9h-Sc-bh2" firstAttribute="centerX" secondItem="v2M-gW-uGl" secondAttribute="centerX" id="gEh-jv-k6e"/>
+                <constraint firstItem="v2M-gW-uGl" firstAttribute="top" secondItem="pfI-Kz-bq9" secondAttribute="top" id="hXI-GM-wc9"/>
+                <constraint firstItem="k8a-nE-7bk" firstAttribute="height" secondItem="v2M-gW-uGl" secondAttribute="height" id="j01-XC-Bh3"/>
+                <constraint firstItem="4mK-aD-p2E" firstAttribute="top" secondItem="k8a-nE-7bk" secondAttribute="top" id="lYJ-hz-dSd"/>
+                <constraint firstItem="Sr5-SY-Cdx" firstAttribute="top" secondItem="4mK-aD-p2E" secondAttribute="bottom" constant="10" id="qe6-E8-UnP"/>
+                <constraint firstItem="4mK-aD-p2E" firstAttribute="trailing" secondItem="pfI-Kz-bq9" secondAttribute="trailing" id="veL-jE-gvh"/>
+                <constraint firstItem="x9h-Sc-bh2" firstAttribute="centerY" secondItem="bmB-Lg-Aa4" secondAttribute="centerY" id="wzL-UJ-wd9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="138.40000000000001" y="280.20989505247377"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close" width="17" height="17"/>
+    </resources>
+</document>
